@@ -41,6 +41,10 @@ env:
   CLUSTER_NAME: product-aks
   DEPLOYMENT_MANIFEST_PATH: k8s/deployment.yaml,k8s/service.yaml
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   buildImage:
     runs-on: ubuntu-latest
