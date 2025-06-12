@@ -1,0 +1,9 @@
+{
+  "name": "product-price-api-node",
+  "version": "1.0.0",
+  "description": "Simple product price API",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

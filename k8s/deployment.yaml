@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-api-node
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: product-api-node
+  template:
+    metadata:
+      labels:
+        app: product-api-node
+    spec:
+      containers:
+        - name: product-api-node
+          image: product-price-api-node:latest
+          ports:
+            - containerPort: 3000
